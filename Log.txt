@@ -1,0 +1,6 @@
+2018/12/21 19:50:25:
+種類 'KeyToKey.SyntaxException' の例外がスローされました。
+   場所 KeyToKey.Macro.Syntax.SyntaxNodeBuilder.BuildChildrenNodes(String rootNodeId, List`1 nodes)
+   場所 KeyToKey.Macro.Syntax.SyntaxNodeBuilder.Parse(String syntax)
+   場所 KeyToKey.ViewModels.ActionSelector.Commands.DoneCommand.TryCreate(List`1& arguments, Boolean isCheckMode)
+================================================================================================================================
