@@ -5,8 +5,8 @@
     "RestrictProcesses": [],
     "HotKeys": {
       "Enabled": [
-        "LControlKey",
-        "W"
+        "LWin",
+        "Q"
       ],
       "Refresh": [],
       "Variable": [],
@@ -34,97 +34,6 @@
             "WaitTime2": 30,
             "ToggleMode": false,
             "Trigger": "IMENonconvert",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "F",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "F",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "G",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "G",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "V",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "V",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "D4",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "D4",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "R",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "R",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "D5",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "D5",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "T",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 10,
-            "WaitTime2": 30,
-            "ToggleMode": false,
-            "Trigger": "T",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
             "IsExtern": false,
@@ -293,7 +202,7 @@
           }
         ],
         "Modifiers": [
-          "None",
+          "None"
         ]
       }
     ]
@@ -380,7 +289,7 @@
           }
         ],
         "Modifiers": [
-          "None",
+          "None"
         ]
       }
     ]
@@ -411,7 +320,7 @@
           }
         ],
         "Modifiers": [
-          "None",
+          "None"
         ]
       }
     ]
