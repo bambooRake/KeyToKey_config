@@ -297,7 +297,24 @@
   "MacroAssign": {
     "Groups": [
       {
-        "Assign": [],
+        "Assign": [
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "EnableWaitForTriggerUp": false,
+            "ContinuousMode": false,
+            "CanBreak": false,
+            "ToggleMode": false,
+            "EnterMacroName": "IME_OFF",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "Trigger": "IMEConvert",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          }
+        ],
         "Modifiers": []
       },
       {
@@ -314,6 +331,22 @@
             "ExitMacroName": null,
             "ExitMacroArguments": [],
             "Trigger": "Q",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "EnableWaitForTriggerUp": false,
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "EnterMacroName": "IME_ON",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "Trigger": "IMEConvert",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
             "FileName": null
@@ -368,6 +401,88 @@
   },
   "Variables": [],
   "Macro": [
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyDown",
+          "Arguments": [
+            "Keys.LControlKey",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Oem6",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyUp",
+          "Arguments": [
+            "Keys.LControlKey",
+            "0",
+            "True"
+          ]
+        }
+      ],
+      "Variables": [],
+      "Expression": null,
+      "Name": "IME_ON",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyDown",
+          "Arguments": [
+            "Keys.LControlKey",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.OemOpenBrackets",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyUp",
+          "Arguments": [
+            "Keys.LControlKey",
+            "0",
+            "True"
+          ]
+        }
+      ],
+      "Variables": [],
+      "Expression": null,
+      "Name": "IME_OFF",
+      "IsExtern": false,
+      "FileName": null
+    },
     {
       "Parameters": [],
       "Actions": [
