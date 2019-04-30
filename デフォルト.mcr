@@ -301,14 +301,27 @@
           {
             "IsExtern": false,
             "When": "Down",
-            "EnableWaitForTriggerUp": false,
             "ContinuousMode": false,
             "CanBreak": false,
             "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
             "EnterMacroName": "IME_OFF",
             "EnterMacroArguments": [],
             "ExitMacroName": null,
             "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
             "Trigger": "IMEConvert",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
@@ -322,14 +335,27 @@
           {
             "IsExtern": false,
             "When": "Down",
-            "EnableWaitForTriggerUp": false,
             "ContinuousMode": false,
             "CanBreak": false,
             "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
             "EnterMacroName": "アプリ終了",
             "EnterMacroArguments": [],
             "ExitMacroName": null,
             "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
             "Trigger": "Q",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
@@ -338,15 +364,57 @@
           {
             "IsExtern": false,
             "When": "Down",
-            "EnableWaitForTriggerUp": false,
             "ContinuousMode": false,
             "CanBreak": true,
             "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
             "EnterMacroName": "IME_ON",
             "EnterMacroArguments": [],
             "ExitMacroName": null,
             "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
             "Trigger": "IMEConvert",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": true,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_L",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "B",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
             "FileName": null
@@ -419,7 +487,7 @@
           "IsHidden": false,
           "Name": "KeyPress",
           "Arguments": [
-            "Keys.Oem6",
+            "Keys.OemOpenBrackets",
             "0",
             "0",
             "True"
@@ -437,8 +505,7 @@
         }
       ],
       "Variables": [],
-      "Expression": null,
-      "Name": "IME_ON",
+      "Name": "IME_OFF",
       "IsExtern": false,
       "FileName": null
     },
@@ -460,7 +527,7 @@
           "IsHidden": false,
           "Name": "KeyPress",
           "Arguments": [
-            "Keys.OemOpenBrackets",
+            "Keys.Oem6",
             "0",
             "0",
             "True"
@@ -478,8 +545,68 @@
         }
       ],
       "Variables": [],
-      "Expression": null,
-      "Name": "IME_OFF",
+      "Name": "IME_ON",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Left",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "500"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Left",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [],
+      "Name": "z_remap_L",
       "IsExtern": false,
       "FileName": null
     },
@@ -519,7 +646,6 @@
         }
       ],
       "Variables": [],
-      "Expression": null,
       "Name": "アプリ終了",
       "IsExtern": false,
       "FileName": null
@@ -562,7 +688,6 @@
         }
       ],
       "Variables": [],
-      "Expression": null,
       "Name": "マクロ1",
       "IsExtern": false,
       "FileName": null
@@ -581,7 +706,6 @@
         }
       ],
       "Variables": [],
-      "Expression": null,
       "Name": "左ボタンアップ",
       "IsExtern": false,
       "FileName": null
@@ -601,7 +725,6 @@
         }
       ],
       "Variables": [],
-      "Expression": null,
       "Name": "左ボタンダウン",
       "IsExtern": false,
       "FileName": null
