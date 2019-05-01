@@ -27,11 +27,11 @@
       {
         "Assign": [
           {
-            "AssignKey": "Modifiers",
+            "AssignKey": "None",
             "IsMacroCancel": true,
             "ContinuousMode": false,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
+            "WaitTime1": 10,
+            "WaitTime2": 30,
             "ToggleMode": false,
             "Trigger": "IMENonconvert",
             "IsTriggerCancel": true,
@@ -71,123 +71,6 @@
             "FileName": null
           },
           {
-            "AssignKey": "Home",
-            "IsMacroCancel": true,
-            "ContinuousMode": false,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "A",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "End",
-            "IsMacroCancel": true,
-            "ContinuousMode": false,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "E",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Down",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "J",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Up",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "K",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Left",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "H",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Right",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "L",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Back",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "X",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Return",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "S",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "AssignKey": "Delete",
-            "IsMacroCancel": true,
-            "ContinuousMode": true,
-            "WaitTime1": 55,
-            "WaitTime2": 55,
-            "ToggleMode": false,
-            "Trigger": "D",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
             "AssignKey": "LButton",
             "IsMacroCancel": true,
             "ContinuousMode": false,
@@ -214,80 +97,7 @@
         "Modifiers": []
       },
       {
-        "Assign": [
-          {
-            "Action": {
-              "IsExtern": false,
-              "IsHidden": false,
-              "Name": "MouseWheelDown",
-              "Arguments": [
-                "10"
-              ]
-            },
-            "Interval": 10,
-            "ContinuousMode": true,
-            "CanStop": true,
-            "Trigger": "R",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "Action": {
-              "IsExtern": false,
-              "IsHidden": false,
-              "Name": "MouseWheelUp",
-              "Arguments": [
-                "10"
-              ]
-            },
-            "Interval": 10,
-            "ContinuousMode": true,
-            "CanStop": true,
-            "Trigger": "D4",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "Action": {
-              "IsExtern": false,
-              "IsHidden": false,
-              "Name": "MouseWheelLeft",
-              "Arguments": [
-                "10"
-              ]
-            },
-            "Interval": 10,
-            "ContinuousMode": true,
-            "CanStop": true,
-            "Trigger": "D5",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          },
-          {
-            "Action": {
-              "IsExtern": false,
-              "IsHidden": false,
-              "Name": "MouseWheelRight",
-              "Arguments": [
-                "10"
-              ]
-            },
-            "Interval": 10,
-            "ContinuousMode": true,
-            "CanStop": true,
-            "Trigger": "T",
-            "IsTriggerCancel": true,
-            "AllowContinuousInput": true,
-            "IsExtern": false,
-            "FileName": null
-          }
-        ],
+        "Assign": [],
         "Modifiers": [
           "None"
         ]
@@ -302,10 +112,10 @@
             "IsExtern": false,
             "When": "Down",
             "ContinuousMode": false,
-            "CanBreak": false,
+            "CanBreak": true,
             "ToggleMode": false,
             "DoubleClickTime": 250,
-            "LongPressTimeout": 600,
+            "LongPressTimeout": 200,
             "ExecutionRestriction": false,
             "ExecutionDuration": 500,
             "WaitForTriggerUp": false,
@@ -319,7 +129,7 @@
               "Arguments": []
             },
             "LongPressed": {
-              "Name": null,
+              "Name": "IME_ON",
               "Arguments": []
             },
             "Trigger": "IMEConvert",
@@ -336,7 +146,7 @@
             "IsExtern": false,
             "When": "Down",
             "ContinuousMode": false,
-            "CanBreak": false,
+            "CanBreak": true,
             "ToggleMode": false,
             "DoubleClickTime": 250,
             "LongPressTimeout": 600,
@@ -344,7 +154,297 @@
             "ExecutionDuration": 500,
             "WaitForTriggerUp": false,
             "CanNotShow": false,
-            "EnterMacroName": "アプリ終了",
+            "EnterMacroName": "z_remap_R",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "R",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_4",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "D4",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_5",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "D5",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_T",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "T",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_H",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "H",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_J",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "J",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_K",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "K",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_L",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "L",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_X",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "X",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_D",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "D",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_Q",
             "EnterMacroArguments": [],
             "ExitMacroName": null,
             "ExitMacroArguments": [],
@@ -373,7 +473,7 @@
             "ExecutionDuration": 500,
             "WaitForTriggerUp": false,
             "CanNotShow": false,
-            "EnterMacroName": "IME_ON",
+            "EnterMacroName": "z_remap_A",
             "EnterMacroArguments": [],
             "ExitMacroName": null,
             "ExitMacroArguments": [],
@@ -385,7 +485,7 @@
               "Name": null,
               "Arguments": []
             },
-            "Trigger": "IMEConvert",
+            "Trigger": "A",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
             "FileName": null
@@ -400,9 +500,9 @@
             "LongPressTimeout": 600,
             "ExecutionRestriction": false,
             "ExecutionDuration": 500,
-            "WaitForTriggerUp": true,
+            "WaitForTriggerUp": false,
             "CanNotShow": false,
-            "EnterMacroName": "z_remap_L",
+            "EnterMacroName": "z_remap_S",
             "EnterMacroArguments": [],
             "ExitMacroName": null,
             "ExitMacroArguments": [],
@@ -414,7 +514,36 @@
               "Name": null,
               "Arguments": []
             },
-            "Trigger": "B",
+            "Trigger": "S",
+            "IsTriggerCancel": true,
+            "AllowContinuousInput": true,
+            "FileName": null
+          },
+          {
+            "IsExtern": false,
+            "When": "Down",
+            "ContinuousMode": false,
+            "CanBreak": true,
+            "ToggleMode": false,
+            "DoubleClickTime": 250,
+            "LongPressTimeout": 600,
+            "ExecutionRestriction": false,
+            "ExecutionDuration": 500,
+            "WaitForTriggerUp": false,
+            "CanNotShow": false,
+            "EnterMacroName": "z_remap_E",
+            "EnterMacroArguments": [],
+            "ExitMacroName": null,
+            "ExitMacroArguments": [],
+            "DoubleClicked": {
+              "Name": null,
+              "Arguments": []
+            },
+            "LongPressed": {
+              "Name": null,
+              "Arguments": []
+            },
+            "Trigger": "E",
             "IsTriggerCancel": true,
             "AllowContinuousInput": true,
             "FileName": null
@@ -555,9 +684,199 @@
         {
           "IsExtern": false,
           "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "MouseWheelUp",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_4",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "MouseWheelLeft",
+          "Arguments": [
+            "10"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_5",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
           "Name": "KeyPress",
           "Arguments": [
-            "Keys.Left",
+            "Keys.Home",
             "0",
             "0",
             "True"
@@ -566,10 +885,256 @@
         {
           "IsExtern": false,
           "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
           "Name": "Wait",
           "Arguments": [
-            "500"
+            "200"
           ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_A",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Delete",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_D",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.End",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_E",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -593,10 +1158,47 @@
         {
           "IsExtern": false,
           "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
           "Name": "Wait",
           "Arguments": [
-            "20"
+            "200"
           ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -605,8 +1207,333 @@
           "Arguments": []
         }
       ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_H",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [],
       "Variables": [],
+      "Name": "z_remap_henkan",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Down",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_J",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Down",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_K",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Right",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
       "Name": "z_remap_L",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyDown",
+          "Arguments": [
+            "Keys.None",
+            "0",
+            "True"
+          ]
+        }
+      ],
+      "Variables": [],
+      "Name": "z_remap_muhenkan",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyUp",
+          "Arguments": [
+            "Keys.None",
+            "0",
+            "True"
+          ]
+        }
+      ],
+      "Variables": [],
+      "Name": "z_remap_muhenkan_up",
       "IsExtern": false,
       "FileName": null
     },
@@ -646,7 +1573,7 @@
         }
       ],
       "Variables": [],
-      "Name": "アプリ終了",
+      "Name": "z_remap_Q",
       "IsExtern": false,
       "FileName": null
     },
@@ -656,11 +1583,102 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "KeyPress",
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
           "Arguments": [
-            "Keys.A",
-            "10",
-            "50",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "MouseWheelDown",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_R",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
             "True"
           ]
         },
@@ -669,63 +1687,251 @@
           "IsHidden": false,
           "Name": "KeyPress",
           "Arguments": [
-            "Keys.B",
-            "10",
-            "50",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.C",
-            "10",
-            "50",
-            "True"
-          ]
-        }
-      ],
-      "Variables": [],
-      "Name": "マクロ1",
-      "IsExtern": false,
-      "FileName": null
-    },
-    {
-      "Parameters": [],
-      "Actions": [
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "MouseUp",
-          "Arguments": [
-            "MouseButton.Left",
-            "0"
-          ]
-        }
-      ],
-      "Variables": [],
-      "Name": "左ボタンアップ",
-      "IsExtern": false,
-      "FileName": null
-    },
-    {
-      "Parameters": [],
-      "Actions": [
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "MouseDown",
-          "Arguments": [
-            "MouseButton.Left",
+            "Keys.Enter",
+            "0",
             "0",
             "True"
           ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
         }
       ],
-      "Variables": [],
-      "Name": "左ボタンダウン",
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_S",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "MouseWheelRight",
+          "Arguments": [
+            "10"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_T",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Initialize",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "Keys.Back",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$first_call_flg == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$first_call_flg\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Else",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "50"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [
+        {
+          "Name": "$first_call_flg",
+          "Syntax": "True",
+          "IsExtern": false
+        }
+      ],
+      "Name": "z_remap_X",
       "IsExtern": false,
       "FileName": null
     }
