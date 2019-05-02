@@ -5,8 +5,8 @@
     "RestrictProcesses": [],
     "HotKeys": {
       "Enabled": [
-        "LWin",
-        "Q"
+        "LShiftKey",
+        "Escape"
       ],
       "Refresh": [],
       "Variable": [],
@@ -700,7 +700,7 @@
           "IsHidden": false,
           "Name": "MouseWheelUp",
           "Arguments": [
-            "50"
+            "200"
           ]
         },
         {
@@ -788,7 +788,7 @@
           "IsHidden": false,
           "Name": "MouseWheelLeft",
           "Arguments": [
-            "10"
+            "100"
           ]
         },
         {
@@ -1339,7 +1339,7 @@
           "IsHidden": false,
           "Name": "KeyPress",
           "Arguments": [
-            "Keys.Down",
+            "Keys.Up",
             "0",
             "0",
             "True"
@@ -1599,7 +1599,7 @@
           "IsHidden": false,
           "Name": "MouseWheelDown",
           "Arguments": [
-            "50"
+            "200"
           ]
         },
         {
@@ -1778,7 +1778,7 @@
           "IsHidden": false,
           "Name": "MouseWheelRight",
           "Arguments": [
-            "10"
+            "100"
           ]
         },
         {
