@@ -599,6 +599,276 @@
   "Variables": [],
   "Macro": [
     {
+      "Parameters": [
+        {
+          "TypeName": "Bool",
+          "Name": "$flg_ctrl",
+          "DefaultValue": "False",
+          "Description": null
+        },
+        {
+          "TypeName": "Bool",
+          "Name": "$flg_shift",
+          "DefaultValue": "False",
+          "Description": null
+        },
+        {
+          "TypeName": "Bool",
+          "Name": "$flg_alt",
+          "DefaultValue": "False",
+          "Description": null
+        }
+      ],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_ctrl"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyDown",
+          "Arguments": [
+            "Keys.LControlKey",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_shift"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyDown",
+          "Arguments": [
+            "Keys.LShiftKey",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_alt"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyDown",
+          "Arguments": [
+            "Keys.LMenu",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        }
+      ],
+      "Variables": [],
+      "Name": "_common_mods",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [
+        {
+          "TypeName": "Keys",
+          "Name": "$output_key",
+          "DefaultValue": "Keys.None",
+          "Description": null
+        }
+      ],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "$output_key",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$start_time\"",
+            "System.GetTickCount()"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@While",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_first == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "System.GetTickCount() - $start_time > 200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Continue",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyPress",
+          "Arguments": [
+            "$output_key",
+            "0",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "30"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndWhile",
+          "Arguments": []
+        }
+      ],
+      "Variables": [],
+      "Name": "_common_remap",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
+      "Parameters": [],
+      "Actions": [
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyUp",
+          "Arguments": [
+            "Keys.LControlKey",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyUp",
+          "Arguments": [
+            "Keys.LShiftKey",
+            "0",
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "KeyUp",
+          "Arguments": [
+            "Keys.LMenu",
+            "0",
+            "True"
+          ]
+        }
+      ],
+      "Variables": [],
+      "Name": "common_reset",
+      "IsExtern": false,
+      "FileName": null
+    },
+    {
       "Parameters": [],
       "Actions": [
         {
@@ -684,8 +954,28 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
+          "Name": "MouseWheelUp",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$start_time\"",
+            "System.GetTickCount()"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "True"
+          ]
         },
         {
           "IsExtern": false,
@@ -698,6 +988,59 @@
         {
           "IsExtern": false,
           "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_first == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "System.GetTickCount() - $start_time > 200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Continue",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
           "Name": "MouseWheelUp",
           "Arguments": [
             "200"
@@ -706,47 +1049,10 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
           "Name": "Wait",
           "Arguments": [
-            "200"
+            "30"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -772,8 +1078,28 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
+          "Name": "MouseWheelLeft",
+          "Arguments": [
+            "100"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$start_time\"",
+            "System.GetTickCount()"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "True"
+          ]
         },
         {
           "IsExtern": false,
@@ -782,6 +1108,59 @@
           "Arguments": [
             "True"
           ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_first == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "System.GetTickCount() - $start_time > 200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Continue",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -794,47 +1173,10 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
           "Name": "Wait",
           "Arguments": [
-            "200"
+            "30"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -843,13 +1185,7 @@
           "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_5",
       "IsExtern": false,
       "FileName": null
@@ -860,87 +1196,13 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Home"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Home",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_A",
       "IsExtern": false,
       "FileName": null
@@ -951,87 +1213,13 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Delete"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Delete",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_D",
       "IsExtern": false,
       "FileName": null
@@ -1042,87 +1230,13 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.End"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.End",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_E",
       "IsExtern": false,
       "FileName": null
@@ -1133,96 +1247,14 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Left"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Left",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
-      "Name": "z_remap_H",
-      "IsExtern": false,
-      "FileName": null
-    },
-    {
-      "Parameters": [],
-      "Actions": [],
       "Variables": [],
-      "Name": "z_remap_henkan",
+      "Name": "z_remap_H",
       "IsExtern": false,
       "FileName": null
     },
@@ -1232,87 +1264,13 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Down"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Down",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_J",
       "IsExtern": false,
       "FileName": null
@@ -1323,87 +1281,13 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Up"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Up",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_K",
       "IsExtern": false,
       "FileName": null
@@ -1414,126 +1298,14 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Right"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Right",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_L",
-      "IsExtern": false,
-      "FileName": null
-    },
-    {
-      "Parameters": [],
-      "Actions": [
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyDown",
-          "Arguments": [
-            "Keys.None",
-            "0",
-            "True"
-          ]
-        }
-      ],
-      "Variables": [],
-      "Name": "z_remap_muhenkan",
-      "IsExtern": false,
-      "FileName": null
-    },
-    {
-      "Parameters": [],
-      "Actions": [
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyUp",
-          "Arguments": [
-            "Keys.None",
-            "0",
-            "True"
-          ]
-        }
-      ],
-      "Variables": [],
-      "Name": "z_remap_muhenkan_up",
       "IsExtern": false,
       "FileName": null
     },
@@ -1583,8 +1355,28 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
+          "Name": "MouseWheelDown",
+          "Arguments": [
+            "200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$start_time\"",
+            "System.GetTickCount()"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "True"
+          ]
         },
         {
           "IsExtern": false,
@@ -1597,6 +1389,59 @@
         {
           "IsExtern": false,
           "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_first == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "System.GetTickCount() - $start_time > 200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Continue",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
           "Name": "MouseWheelDown",
           "Arguments": [
             "200"
@@ -1605,47 +1450,10 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
           "Name": "Wait",
           "Arguments": [
-            "200"
+            "30"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -1671,78 +1479,10 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Enter"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Enter",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
       "Variables": [
@@ -1762,8 +1502,28 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
+          "Name": "MouseWheelRight",
+          "Arguments": [
+            "100"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$start_time\"",
+            "System.GetTickCount()"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "True"
+          ]
         },
         {
           "IsExtern": false,
@@ -1776,6 +1536,59 @@
         {
           "IsExtern": false,
           "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "$flg_first == True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@If",
+          "Arguments": [
+            "System.GetTickCount() - $start_time > 200"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Variable.Assignment",
+          "Arguments": [
+            "\"$flg_first\"",
+            "False"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "Wait",
+          "Arguments": [
+            "20"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@Continue",
+          "Arguments": [
+            "True"
+          ]
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
+          "Name": "@EndIf",
+          "Arguments": []
+        },
+        {
+          "IsExtern": false,
+          "IsHidden": false,
           "Name": "MouseWheelRight",
           "Arguments": [
             "100"
@@ -1784,47 +1597,10 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
           "Name": "Wait",
           "Arguments": [
-            "200"
+            "30"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
         },
         {
           "IsExtern": false,
@@ -1850,87 +1626,13 @@
         {
           "IsExtern": false,
           "IsHidden": false,
-          "Name": "Variable.Initialize",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@While",
+          "Name": "_common_remap",
           "Arguments": [
-            "True"
+            "Keys.Back"
           ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "KeyPress",
-          "Arguments": [
-            "Keys.Back",
-            "0",
-            "0",
-            "True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@If",
-          "Arguments": [
-            "$first_call_flg == True"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "200"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Variable.Assignment",
-          "Arguments": [
-            "\"$first_call_flg\"",
-            "False"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@Else",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "Wait",
-          "Arguments": [
-            "50"
-          ]
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndIf",
-          "Arguments": []
-        },
-        {
-          "IsExtern": false,
-          "IsHidden": false,
-          "Name": "@EndWhile",
-          "Arguments": []
         }
       ],
-      "Variables": [
-        {
-          "Name": "$first_call_flg",
-          "Syntax": "True",
-          "IsExtern": false
-        }
-      ],
+      "Variables": [],
       "Name": "z_remap_X",
       "IsExtern": false,
       "FileName": null
